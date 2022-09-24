@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Введите Вакансию</title>
+        <title>Рейтинг Вакансии</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Введите вакансию" />
         <p className="description">
           Тут что-то будет
         </p>

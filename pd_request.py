@@ -53,7 +53,7 @@ def csvScoretoHTML(link = link, cand_link=cand_link, **args):
 #неужели там нет таких айдишников
 data_ifempty = {'CandidateId': [i for i in range(123, 133)], 'Score':np.random.random(size=10)}
 if csvScoretoHTML()[1].empty:
-  pd.DataFrame(data_ifempty).to_html('pages/html_table.js')
+  pd.DataFrame(data_ifempty).to_html('html_table.js')
 else:  
-  csvScoretoHTML()[1].to_html('pages/html_table.js')
+  csvScoretoHTML()[1].to_html('html_table.js')
 
