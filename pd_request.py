@@ -50,17 +50,17 @@ def csvScoretoHTML(link = link, cand_link=cand_link, **args):
   #df.drop_duplicates(inplace=True)
   return jobs, df
 
-#да, классы нормальные люди создают не так
-class JobData():
-  data_ifempty = {'CandidateId': [i for i in range(123, 133)], 'Score':np.random.random(size=10), 'Position':['Водитель-экспедитор', 'Водитель (семейный)',
-       'Водитель (автобуса)',
-       'Коориднатор, специалист по подбору персонала', 'Водитель',
-       'Водитель офисный', 'Водитель категории В, С, Д, Е, ДОПОГ',
-       'Персональный водитель руководителя',
-       'Водитель автомобиля категории В, С, Е',
-       'Водитель / Водитель-экспедитор']}
-  if csvScoretoHTML()[1].empty:
-    pd.DataFrame(data_ifempty).to_html('html_table.js')
-  else:  
-    csvScoretoHTML()[1].to_html('html_table.js')
+
+
+data_ifempty = {'CandidateId': [i for i in range(123, 133)], 'Score':np.random.random(size=10), 'Position':['Водитель-экспедитор', 'Водитель (семейный)',
+      'Водитель (автобуса)',
+      'Коориднатор, специалист по подбору персонала', 'Водитель',
+      'Водитель офисный', 'Водитель категории В, С, Д, Е, ДОПОГ',
+      'Персональный водитель руководителя',
+      'Водитель автомобиля категории В, С, Е',
+      'Водитель / Водитель-экспедитор']}
+if csvScoretoHTML()[1].empty:
+  pd.DataFrame(data_ifempty).to_html('html_table.js')
+else:  
+  csvScoretoHTML()[1].to_html('html_table.js')
 
