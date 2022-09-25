@@ -13,9 +13,9 @@ export default function Home() {
       <main>
         <Header title="Введите вакансию" />
         <p className="description">
-        <p className="table">
-          wtf
-        </p>
+        <table className="table">
+          <thead>Здесь что-то будет</thead>
+        </table>
         </p>
       </main>
 
