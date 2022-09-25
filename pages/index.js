@@ -14,7 +14,14 @@ export default function Home() {
         <Header title="Введите вакансию" />
         <p className="description">
         <table className="table">
-          <thead>Здесь что-то будет</thead>
+          <thead> 
+          <tr style="text-align: right;">
+          <th></th>
+            <th>CandidateId</th>
+            <th>Score</th>
+            <th>Position</th>
+          </tr>
+          </thead>
         </table>
         </p>
       </main>
